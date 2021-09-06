@@ -25,12 +25,15 @@ body {
 .container {
   padding: 88px 24px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
 .card {
+  flex: 100%;
   padding: 45px;
 }
 
@@ -70,4 +73,26 @@ p {
 
 .btn--secondary {
   color: var(--veryDarkCyan);
+}
+
+@media only screen and (min-width: 40rem) { /*640px*/
+  .container {
+    /* flex-direction: row; */
+    height: 100vh;
+  }
+  .card {
+    flex: 33.33%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .card__button {
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 64rem) { /*1024px*/
+  .card {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
