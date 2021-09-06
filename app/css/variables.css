@@ -1,0 +1,16 @@
+:root {
+  /* Color */
+  /* Primary */
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --white: hsla(0, 0%, 100%, 0.75);
+  --lightGray: hsl(0, 0%, 95%);
+
+  /* Fonts */
+  /* Font Weight */
+  --font-regular: 400;
+  --font-bold: 700;
+}
