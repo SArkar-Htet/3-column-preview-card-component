@@ -57,10 +57,18 @@ body {
 
 .card__button {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.875rem 2rem;
   background-color: var(--lightGray);
+  border: 2px solid var(--lightGray);
   border-radius: 3.125rem;
   text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.card__button:hover {
+  background-color: transparent;
+  border-color: var(--lightGray);
+  color: var(--lightGray);
 }
 
 .btn--warning {
