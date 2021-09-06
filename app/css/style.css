@@ -12,7 +12,7 @@ body {
   padding: 0;
   line-height: 1.3;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   background-color: var(--lightGray);
 }
 
@@ -23,18 +23,18 @@ body {
 }
 
 .container {
-  padding: 88px 24px;
+  padding: 5.5rem 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 920px;
+  max-width: 57.5rem;
   margin: 0 auto;
 }
 
 .card {
   flex: 100%;
-  padding: 45px;
+  padding: 2.8125rem;
 }
 
 .card--warning {
@@ -49,17 +49,17 @@ body {
   background-color: var(--veryDarkCyan);
 }
 
-p {
+.card__text {
   color: var(--white);
   line-height: 1.5;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 .card__button {
   display: inline-block;
   padding: 1rem 2rem;
   background-color: var(--lightGray);
-  border-radius: 50px;
+  border-radius: 3.125rem;
   text-decoration: none;
 }
 
@@ -77,22 +77,23 @@ p {
 
 @media only screen and (min-width: 40rem) { /*640px*/
   .container {
-    /* flex-direction: row; */
     height: 100vh;
   }
+
   .card {
     flex: 33.33%;
     padding-right: 2rem;
     padding-left: 2rem;
   }
-  .card__button {
-    margin-top: 70px;
+
+  .card__text {
+    margin-bottom: 4.375rem;
   }
 }
 
 @media only screen and (min-width: 64rem) { /*1024px*/
   .card {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
   }
 }
