@@ -20,6 +20,7 @@ body {
   font-family: 'Big Shoulders Display', cursive;
   font-weight: var(--font-bold);
   color: var(--lightGray);
+  text-transform: uppercase;
 }
 
 .container {
